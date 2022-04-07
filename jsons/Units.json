@@ -43,7 +43,6 @@
 		"uniques": ["Can move after attacking"],
 		"promotions": ["Maid Trooper"],
 		"attackSound": "shot"
-		// will be introduced in G&K expansion
 	},
 	{
 		"name": "Maid Infantry",
@@ -84,7 +83,7 @@
 		"cost": 320,
 		"requiredTech": "Dynamite",
 		"upgradesTo": "Rocket Artillery",
-		"uniques": ["Bonus vs City 200%","No defensive terrain bonus",
+		"uniques": ["+[200]% Strength vs [City]","No defensive terrain bonus",
 			"Must set up to ranged attack","Limited Visibility","Ranged attacks may be performed over obstacles"],
 		"promotions": ["Maid Trooper", "Medic"],
 	},
@@ -115,8 +114,8 @@
 		"cost": 375,
 		"requiredTech": "Radar",
 		"requiredResource": "Oil",
-		//"upgradesTo": "Jet Fighter",
-		"uniques": ["[100]% chance to intercept air attacks","Bonus vs Bomber 150%",
+		"upgradesTo": "MF 14",
+		"uniques": ["[100]% chance to intercept air attacks", "+[150]% Strength vs [Bomber]",
 			"6 tiles in every direction always visible"],
 		"promotions": ["Bombardment I"],
 		"attackSound": "shot"
@@ -135,30 +134,28 @@
 		"requiredTech": "Radar",
 		"requiredResource": "Oil",
 		"promotions": ["Bombardment I"],
-		//"upgradesTo": "Stealth Bomber",
+		"upgradesTo": "Stealth Bomber",
 		"attackSound": "shot"
 	},
-	/*
 	{
 		"name": "MF 14",
 		"unitType": "Fighter",
 		"replaces": "Jet Fighter",
 		"uniqueTo": "Maid Empire",
-		"movement": 2,
-		"strength": 50,
+		"movement": 1,
+		"strength": 75,
 		"rangedStrength": 75,
 		"range": 10,
 		"interceptRange": 10,
 		"cost": 425,
 		"requiredTech": "Lasers",
-		"requiredResource": "Aluminium",
+		"requiredResource": "Aluminum",
 		"uniques": ["[100]% chance to intercept air attacks",
-			"Bonus vs Bomber 150%",
+			"+[150]% Strength vs [Bomber]",
 			"6 tiles in every direction always visible"],
 		"promotions": ["Bombardment I"],
 		"attackSound": "shot"
 	},
-	*/
 	{
 		"name": "Z-Destroyer",
 		"unitType": "WaterMelee",
@@ -169,9 +166,8 @@
 		"interceptRange": 2,
 		"cost": 375,
 		"requiredTech": "Combustion",
-		"uniques": ["Can attack submarines", "[40]% chance to intercept air attacks",
-			"May withdraw before melee ([50]%)", "Bonus vs WaterSubmarine 100%", "Can move after attacking"],
-		"promotions": ["Siege"],
+		"uniques": ["Can attack submarines", "[40]% chance to intercept air attacks", "+[50]% Strength vs [City]",
+			"May withdraw before melee ([50]%)", "+[100]% Strength vs [WaterSubmarine]", "Can move after attacking"],
 	},
 	{
 		"name": "Maid Cruiser",
@@ -184,19 +180,18 @@
 		"range": 2,
 		"cost": 375,
 		"requiredTech": "Electronics",
-		//"upgradesTo": " "Missile Cruiser"",
+		"upgradesTo": "Missile Cruiser",
 		"uniques": ["Can attack submarines", "[60]% chance to intercept air attacks",
-			"Bonus vs WaterSubmarine 100%", "Ranged attacks may be performed over obstacles"],
+			"+[100]% Strength vs [WaterSubmarine]", "Ranged attacks may be performed over obstacles"],
 		"promotions": ["Targeting I"]
 	},
-	
 	{
 		"name": "Head Maid",
 		"unitType": "Civilian",
 		"uniqueTo": "Maid Empire",
 		"replaces": "Great General",
 		"uniques": ["Can start an [8]-turn golden age", "Bonus for units in 2 tile radius 15%", "Can construct [Citadel]",
-			"Great Person - [War]", "Unbuildable", "+1 Visibility Range", "Invisible to others"],
+			"Great Person - [War]", "Unbuildable", "[+1] Visibility Range", "Invisible to others"],
 		"movement": 3
 	},
 ]
